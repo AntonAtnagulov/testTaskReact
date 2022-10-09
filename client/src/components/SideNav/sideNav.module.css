@@ -1,0 +1,22 @@
+.drawerBtn {
+    height: 200px; 
+    width: 30px; 
+    background-color: #6982b4;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 0px 6px 6px 0px;
+}
+
+.drawerSpan {
+    user-select: none;
+}
+
+.link {
+    text-decoration: none;
+    margin: 15px;
+}
+
+.icon {
+    margin-right: 12px;
+}
