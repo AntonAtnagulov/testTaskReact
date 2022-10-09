@@ -11,6 +11,7 @@ import RatingModal from '../RatingModal/RatingModal';
 import { ICardProps, filmsType } from '../../interfaces/interfaces';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToFavorite, delFromFavorite } from '../../redux/rtkSlice';
+import style from './oneCard.module.css'
 
 export default function OneCard({ film }: ICardProps) {
     const dispatch = useDispatch();
@@ -48,7 +49,7 @@ export default function OneCard({ film }: ICardProps) {
                 <Typography
                     variant="body2"
                     color="text.secondary"
-                    style={{height: '40px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'pre-line' }}
+                    className={style.description}
                 >
                     {film.description}
                 </Typography>
